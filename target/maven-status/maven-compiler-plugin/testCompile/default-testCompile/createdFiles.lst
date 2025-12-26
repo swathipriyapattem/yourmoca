@@ -1,0 +1,12 @@
+com/yourmoca/tests/AllCategoriesTest.class
+com/yourmoca/tests/SignUpTest.class
+com/yourmoca/tests/FindWorkTest.class
+com/yourmoca/tests/PostRequestTest.class
+com/yourmoca/tests/LoginTest.class
+com/yourmoca/tests/HomePageTest.class
+com/yourmoca/base/BaseTest.class
+com/yourmoca/testdata/PostRequestData.class
+com/yourmoca/tests/CastingCallsTest.class
+com/yourmoca/testdata/LoginData.class
+com/yourmoca/tests/CompetitionsTest.class
+com/yourmoca/tests/ForgotPasswordTest.class

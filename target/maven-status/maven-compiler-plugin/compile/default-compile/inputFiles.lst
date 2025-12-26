@@ -1,0 +1,12 @@
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/base/BasePage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/factory/PlaywrightFactory.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/AllCategoriesPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/CastingCallsPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/CompetitionsPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/FindWorkPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/ForgotPasswordPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/HomePage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/LoginPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/PostARequest.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/pages/SignUpPage.java
+/Users/swathipriyapattem/test/YourMoca_PT/src/main/java/com/yourmoca/utils/ConfigReader.java

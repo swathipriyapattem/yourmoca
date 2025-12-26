@@ -1,0 +1,12 @@
+com/yourmoca/pages/AllCategoriesPage.class
+com/yourmoca/pages/CompetitionsPage.class
+com/yourmoca/pages/HomePage.class
+com/yourmoca/utils/ConfigReader.class
+com/yourmoca/pages/CastingCallsPage.class
+com/yourmoca/pages/FindWorkPage.class
+com/yourmoca/pages/ForgotPasswordPage.class
+com/yourmoca/base/BasePage.class
+com/yourmoca/pages/SignUpPage.class
+com/yourmoca/factory/PlaywrightFactory.class
+com/yourmoca/pages/LoginPage.class
+com/yourmoca/pages/PostARequest.class
