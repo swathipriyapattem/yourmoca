@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.yourmoca.tests.PostRequestTest" class="method navigator-link" hash-for-method="postNewRequestTest(Isha, Short Film, It is a thriller content, 2025-12-31, India, Andhra Pradesh, Kakinada, Actor, 2025...)">postNewRequestTest(Isha, Short Film, It is a thriller content, 2025-12-31, India, Andhra Pradesh, Kakinada, Actor, 2025...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.yourmoca.tests.MultiUserWorkflowTest" class="method navigator-link" hash-for-method="multiUserJobWorkflowTest">multiUserJobWorkflowTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -121,19 +121,53 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.yourmoca.tests.PostRequestTest</span>
+              <span class="class-name">com.yourmoca.tests.MultiUserWorkflowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="postNewRequestTest(Isha, Short Film, It is a thriller content, 2025-12-31, India, Andhra Pradesh, Kakinada, Actor, 2025...)">
-                  </a> <!-- postNewRequestTest(Isha, Short Film, It is a thriller content, 2025-12-31, India, Andhra Pradesh, Kakinada, Actor, 2025...) -->
-                  <span class="method-name">postNewRequestTest</span>
-                  <span class="parameters">(Isha,Short Film,It is a thriller content,2025-12-31,India,Andhra Pradesh,Kakinada,Actor,2025-12-30,2025-12-31,2025-12-29,Must have experience in acting field)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Post Request failed! expected [true] but found [false]
-	at com.yourmoca.tests.PostRequestTest.postNewRequestTest(PostRequestTest.java:42)
+                  <a name="multiUserJobWorkflowTest">
+                  </a> <!-- multiUserJobWorkflowTest -->
+                  <span class="method-name">multiUserJobWorkflowTest</span>
+                  <div class="stack-trace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/server/dispatchers/dispatcher.js:273:44)
+    at transport.onmessage (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/cli/driver.js:52:57)
+    at Immediate._onImmediate (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/protocol/transport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:688)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:687)
+	at com.microsoft.playwright.Page.click(Page.java:3914)
+	at com.yourmoca.pages.PostARequest.selectDate(PostARequest.java:119)
+	at com.yourmoca.pages.PostARequest.fillPostRequestForm(PostARequest.java:104)
+	at com.yourmoca.tests.MultiUserWorkflowTest.multiUserJobWorkflowTest(MultiUserWorkflowTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 33 stack frames
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/server/dispatchers/dispatcher.js:273:44)
+    at transport.onmessage (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/cli/driver.js:52:57)
+    at Immediate._onImmediate (/private/var/folders/d6/42lhqh494bz5vt42m14k7n6r0000gn/T/playwright-java-8751363892106657516/package/lib/protocol/transport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 44 more
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -149,13 +183,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.yourmoca.tests.PostRequestTest&quot;/&gt;
+      &lt;class name=&quot;com.yourmoca.tests.MultiUserWorkflowTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -197,9 +226,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'postNewRequestTest')
-data.setCell(0, 2, 'com.yourmoca.tests.PostRequestTest')
-data.setCell(0, 3, 11567);
+data.setCell(0, 1, 'multiUserJobWorkflowTest')
+data.setCell(0, 2, 'com.yourmoca.tests.MultiUserWorkflowTest')
+data.setCell(0, 3, 11910);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -230,28 +259,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.yourmoca.tests.PostRequestTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.yourmoca.tests.MultiUserWorkflowTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setupTest</span>
-                <span class="method-start">3800 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">pageSetup</span>
-                <span class="method-start">4616 ms</span>
+                <span class="method-start">4083 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">postNewRequestTest(Isha, Short Film, It is a thriller content, 2025-12-31, India, Andhra Pradesh, Kakinada, Actor, 2025...)</span>
-                <span class="method-start">4618 ms</span>
+                <span class="method-name">multiUserJobWorkflowTest</span>
+                <span class="method-start">4894 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16188 ms</span>
+                <span class="method-start">16811 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -55,6 +55,7 @@ public class PostARequest extends BasePage {
 
     private String submitRequestBtn = "//button[contains(@class, 'css-16jxrl6')]";
     private String successMessage = "//*[contains(normalize-space(text()),'posted your request successfully')]";
+    private String closePopupBtn = "//button[@aria-label='close']";
 
     public PostARequest(Page page) {
         super(page);
@@ -159,6 +160,30 @@ public class PostARequest extends BasePage {
         } catch (PlaywrightException e) {
             return false;
         }
+    }
+
+    public void closeSuccessPopup() {
+        if (page.isVisible(closePopupBtn)) {
+            page.click(closePopupBtn);
+        } else {
+            // Fallback: click outside or escape if button not found by aria-label
+            page.keyboard().press("Escape");
+        }
+    }
+
+    // Locators for Managing Requests
+    private String myRequestsLink = "//a[text()='My Requests']";
+    private String viewApplicationsLink = "//button[text()='View Applications']"; // Update with actual
+    private String acceptBtn = "//button[text()='Accept']"; // Update with actual
+
+    public void navigateToMyRequests() {
+        page.click(myRequestsLink);
+    }
+
+    public void acceptFirstApplication(String jobTitle) {
+        // Logic to find the specific job and click view applications
+        page.click("//h6[contains(text(), '" + jobTitle + "')]/following::" + viewApplicationsLink);
+        page.click(acceptBtn);
     }
 
 }

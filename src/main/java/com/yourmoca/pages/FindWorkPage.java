@@ -10,5 +10,17 @@ public class FindWorkPage extends BasePage {
         super(page);
     }
 
-    // Add elements and actions here
+    // Locators
+    private String findWorkLink = "//div[@class=\"MuiStack-root css-1ps3d0q\"]//a[@href=\"/findwork\"]";
+    private String viewDetailsBtn = "(//button[normalize-space()='View Details'])[1]";
+    private String submitApplicationBtn = "//span[text()=\"Apply\"]";
+
+    public void navigateToFindWork() {
+        page.click(findWorkLink);
+    }
+
+    public void applyForFirstJob() {
+        page.click(viewDetailsBtn);
+        page.click(submitApplicationBtn);
+    }
 }

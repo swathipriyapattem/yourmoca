@@ -3,15 +3,14 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.yourmoca.tests.PostRequestTest">
+      <class name="com.yourmoca.tests.MultiUserWorkflowTest">
         <methods>
-          <include name="postNewRequestTest" invocation-numbers="0"/>
-          <include name="pageSetup"/>
+          <include name="multiUserJobWorkflowTest"/>
           <include name="setup"/>
           <include name="setupTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.yourmoca.tests.PostRequestTest -->
+      </class> <!-- com.yourmoca.tests.MultiUserWorkflowTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

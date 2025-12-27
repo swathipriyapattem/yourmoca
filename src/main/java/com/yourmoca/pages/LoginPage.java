@@ -11,7 +11,11 @@ public class LoginPage extends BasePage {
     private String passwordInput = "//input[@name=\"password\"]"; // e.g. input[name='password']
     private String loginBtn = "//span[text()=\"Login\"]"; // e.g. button[type='submit']
     private String forgotPwdLink = "//div[text()=\"Forgot Password?\"]";
-    private String dashboardLink = "//a[@href=\"/dashboard\"]";
+    private String dashboardLink = "(//a[@href=\"/dashboard\"])[1]";
+    private String viewRequestBtn = "//span[text()=\"View My Requests\"]";
+    private String notificationsLink = "//div[text()=\"Notifications\"]";
+    private String notificationItem = "//*[text()=\" has applied for your Job \"][1]";
+    private String acceptBtn = "//span[text()=\"Accept\"]";
     private String appPasswordInput = "#dummy_app_password_id"; // If site lock exists
     private String appPasswordBtn = "#dummy_app_password_btn_id";
 
@@ -37,15 +41,43 @@ public class LoginPage extends BasePage {
         return page.isVisible(forgotPwdLink);
     }
 
-    public void doLogin(String appUserName, String appPassword) {
+    public boolean doLogin(String appUserName, String appPassword) {
         System.out.println("App creds: " + appUserName + ":" + appPassword);
+        System.out.println("Clicking Login/Signup button: " + login_signupBtn);
         page.click(login_signupBtn);
+        System.out.println("Filling email: " + appUserName);
         page.fill(emailInput, appUserName);
+        System.out.println("Filling password...");
         page.fill(passwordInput, appPassword);
+        System.out.println("Clicking Login submit button: " + loginBtn);
         page.click(loginBtn);
+        return isDashboardVisible();
     }
 
     public boolean isDashboardVisible() {
-        return page.isVisible(dashboardLink);
+        page.waitForLoadState();
+        page.locator(dashboardLink).waitFor();
+        return page.locator(dashboardLink).isVisible();
+    }
+
+    public void viewRequests() {
+
+        page.waitForLoadState();
+        page.click(viewRequestBtn);
+    }
+
+    public void goToNotifications() {
+        page.waitForLoadState();
+        page.click(notificationsLink);
+    }
+
+    public void clickOnAppliedNotification() {
+        page.waitForLoadState();
+        page.click(notificationItem);
+    }
+
+    public void clickAccept() {
+        page.waitForLoadState();
+        page.click(acceptBtn);
     }
 }
